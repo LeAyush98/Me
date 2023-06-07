@@ -724,20 +724,20 @@
 		transition: opacity 1s ease, transform 1s ease;
 	}
 
-		#main .avatar {
+		 .avatar {
 			position: relative;
 			display: block;
 			margin-bottom: 1.5em;
 		}
 
-			#main .avatar img {
+			.avatar img {
 				display: block;
 				margin: 0 auto;
 				border-radius: 100%;
 				box-shadow: 0 0 0 1.5em #ffffff;
 			}
 
-			#main .avatar:before {
+		   .avatar:before {
 				content: '';
 				display: block;
 				position: absolute;
@@ -757,14 +757,14 @@
 				padding: 4em 2em 2.5em 2em ;
 			}
 
-				#main .avatar:before {
+				 .avatar:before {
 					left: -2em;
 					width: calc(100% + 4em);
 				}
 
 		}
 
-		body.is-loading #main {
+		body.is-loading {
 			opacity: 0;
 			-moz-transform: rotateX(15deg);
 			-webkit-transform: rotateX(15deg);

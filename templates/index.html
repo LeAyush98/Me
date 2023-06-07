@@ -4,40 +4,70 @@
 		<title>Ayush Sharma</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="static/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../static/assets/css/card.css">
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+		<noscript><link rel="stylesheet" href="../static/assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
 
 			<div id="wrapper">
+					<div class="card" id="card">
 
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="static/images/avatar.jpg" alt="" /></span>
-							<h1>Ayush Sharma</h1>
-							<p>Python/Full-Stack Developer</p>
-						</header>
-						<footer>
-							<ul class="icons">
-								<li><a href="https://github.com/LeAyush98" class="fa-github">GitHub</a></li>
-								<li><a href="https://www.instagram.com/ayush_shar7/" class="fa-instagram">Instagram</a></li>
-								<li><a href="https://www.linkedin.com/in/ayush-sharma-913a3025b/" class="fa-linkedin">Linkedin</a></li>
-							</ul>
-						</footer>
-					</section>
+						<div class="front" style="background-color : white;">
+							<header>
+								<span class="avatar"><img src="../static/images/avatar.jpg" alt="" /></span>
+								<h1>Ayush Sharma</h1>
+								<h6>Python / Django Developer</h6>
+							</header>
+							<footer>
+								<ul class="icons">
+									<li><a href="https://github.com/LeAyush98" class="fa-github">GitHub</a></li>
+									<li><a href="https://www.instagram.com/ayush_shar7/" class="fa-instagram">Instagram</a></li>
+									<li><a href="https://www.linkedin.com/in/ayush-sharma-913a3025b/" class="fa-linkedin">Linkedin</a>
+									</li>
+								</ul>
+							</footer>
+							<h6 id="press">Press and hold</h6>
+						</div>
+						<div class="back">
+						  <div>
+							<div class="title"><strong>{{movie.movie_name}} <span class="release_date">({{movie.year}})</span></strong>
+							</div>
+							<div class="rating">
+							  <label>{{movie.rating}}</label>
+							  <i class="fas fa-star star"></i>
+							</div>
+							<div class="increase">
+							  <p class="review"><strong>{{movie.review}}</strong></p>
+							  <p class="overview">
+								<strong>{{movie.summary}}.</strong>
+							  </p>
+							</div>		
+					
+						  </div>
+						</div>
+					  </div>
+
 					<footer id="footer">
 						<ul class="copyright">
-							<li>&copy; Ayush Sharma</li>
+							<li>&copy; Ayush Sharma 2023</li>
 						</ul>
 					</footer>
 
 			</div>
+
+			
 			<script>
 				if ('addEventListener' in window) {
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
 			</script>
+			<script src="../static/js/main.js"></script>
+
 
 	</body>
 </html>
