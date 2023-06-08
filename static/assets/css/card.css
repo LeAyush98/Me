@@ -77,10 +77,11 @@ h6{
     z-index: -1;
 }
 
-.card:active .front {
+.card:hover .front {
     transform: rotateY(180deg);
 }
-.card:nth-child(even):active .front {
+
+.card:nth-child(even):hover .front {
     transform: rotateY(-180deg);
 }
 .back {
@@ -89,13 +90,13 @@ h6{
     padding: 0 2em;
     min-height: 600px;
 }
-.card:active .back {
+.card:hover .back {
     transform: rotateY(0deg);
 }
 .card:nth-child(even) .back {
     transform: rotateY(180deg);
 }
-.card:nth-child(even):active .back {
+.card:nth-child(even):hover .back {
     transform: rotateY(0deg);
 }
 
@@ -103,4 +104,13 @@ h6{
     .press{
         visibility: visible;
     }
+}
+
+p.overview {
+    font-size: 0.89em;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: lowercase !important;
 }

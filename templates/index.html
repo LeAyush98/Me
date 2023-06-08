@@ -12,7 +12,8 @@
 		<noscript><link rel="stylesheet" href="../static/assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
-
+		<audio id="water" src="../static/sounds/water.mp3" loop="true"></audio>
+		<audio id="underwater" src="../static/sounds/underwater.mp3" loop="true"></audio>
 			<div id="wrapper">
 					<div class="card" id="card">
 
@@ -30,31 +31,44 @@
 									</li>
 								</ul>
 							</footer>
-							<h6 id="press">Press and hold</h6>
+							
 						</div>
 						<div class="back">
 						  <div>
-							<div class="title"><strong>{{movie.movie_name}} <span class="release_date">({{movie.year}})</span></strong>
+							<div class="title"><strong><a href="https://github.com/LeAyush98/CouchCart" class="button">CouchCart <i class="fas fa-film film"></i></a></strong>
 							</div>
-							<div class="rating">
-							  <label>{{movie.rating}}</label>
-							  <i class="fas fa-star star"></i>
-							</div>
-							<div class="increase">
-							  <p class="review"><strong>{{movie.review}}</strong></p>
-							  <p class="overview">
-								<strong>{{movie.summary}}.</strong>
+							<p class="overview">
+								<strong>A movie shop e-commerce web application.</strong>
 							  </p>
-							</div>		
-					
+							  <div class="title"><strong><a href="https://github.com/LeAyush98/Blog" class="button">My Blog <i class="fas fa-user user"></i></a></strong>
+							</div>
+							<p class="overview">
+								<strong>This is my personal blog recreated with Django.</strong>
+							  </p>
+							  <div class="title"><strong><a href="https://github.com/LeAyush98/healthilyfe" class="button">Healthilyfe <i class="fa fa-stethoscope" aria-hidden="true"></i></a></strong>
+							</div> 
+							<p class="overview"> 
+								<strong>Health monitoring and maintaining web application.</strong>
+							  </p>
 						  </div>
+						  <footer>
+							<ul class="icons">
+								<li><a href="https://github.com/LeAyush98" class="fa-github">GitHub</a></li>
+								<li><a href="https://www.instagram.com/ayush_shar7/" class="fa-instagram">Instagram</a></li>
+								<li><a href="https://www.linkedin.com/in/ayush-sharma-913a3025b/" class="fa-linkedin">Linkedin</a>
+								</li>
+							</ul>
+						</footer>
 						</div>
 					  </div>
-
+					  <ul class="icons">
+						<li><a href="#" class="fa-music" id="music">Music</a></li>
+					</ul>
 					<footer id="footer">
 						<ul class="copyright">
-							<li>&copy; Ayush Sharma 2023</li>
-						</ul>
+							<li>&copy; Ayush Sharma 2023</li> 
+						</ul> 
+						
 					</footer>
 
 			</div>
