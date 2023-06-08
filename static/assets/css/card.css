@@ -20,20 +20,11 @@
        color: black;
     }
 
-    div.small{
-       font-size: larger;
-       padding-left: 20%;
-   }
-   
    
 }
 @media screen and (max-width: 500px) {
     .card {
-        width: 100%;
-   }
-   div.small{
-       font-size: larger;
-       padding-left: 9%;
+        width: calc(50% - 3rem);
    }
 }
 
